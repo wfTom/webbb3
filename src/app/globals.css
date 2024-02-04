@@ -11759,3 +11759,9 @@ fieldset:disabled .btn {
   border-color: red;
   background-color: #fd5602;
 }
+
+.message {
+  color: gray;
+  margin-left: 10px;
+  margin-top: 10px;
+}
