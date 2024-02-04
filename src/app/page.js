@@ -1,95 +1,66 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+import Head from 'next/head';
 
 export default function Home() {
+  function btnLoginClick() {
+    console.log('tste');
+  }
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
+    <>
+      <Head>
+        <title>Webbb3 | Login</title>
+        <meta charSet="utf8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+      <div className="container col-xxl-8 px-4 py-5">
+        <div className="row flex-lg-row align-items-center g-5 py-5">
+          <div className="col-10 col-sm-8 col-lg-6">
+            <img
+              src=""
+              className="d-block mx-lg-auto img-fluid"
+              width={700}
+              height={500}
             />
-          </a>
+          </div>
+          <div className="col-lg-6">
+            <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              CrypTwitter
+            </h1>
+            <p className="lead">Votação on-chain do BBB.</p>
+            <p className="lead mmb-3">
+              Autentique-se com sua carteira e deixe o seu voto para o próximo
+              paredão.
+            </p>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button
+                type="button"
+                onClick={btnLoginClick}
+                className="btn btn-primary btn-lg px-4 me-md-2"
+              >
+                Conectar com a MetaMask
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p className="col-md-4 mb-0 text-body-secondary">
+            &copy; 2024 Webbb3, Inc
           </p>
-        </a>
+          <ul className="nav col-md-4 justify-content-end">
+            <li className="nav-item">
+              <a href="/" className="nav-link px-2 text-body-secondary">
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="/about" className="nav-link px-2 text-body-secondary">
+                About
+              </a>
+            </li>
+          </ul>
+        </footer>
       </div>
-    </main>
+    </>
   );
 }

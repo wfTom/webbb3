@@ -1,0 +1,11 @@
+Desafios aula 1:
+- permitir 2, 3 ou 4 participantes no paredão;
+- cadastro da foto do participante (ou outros dados);
+- permitir a troca de owner;
+- permitir votos repetidos, mas apenas um por hora (ou x tempo, gerenciável);
+
+Desafios aula 2:
+- deploy em outra blockchain (sugestões: Avalanche, Polygon ou Sepolia);
+- usar useEffect e localStorage para detectar se é o primeiro acesso do usuário ou não (isso é útil mais tarde para login automático);
+- personalizar a página inicial, por exemplo trocando a imagem estática da página inicial por um vídeo do BBB;
+- colocar Captcha na tela de login, para evitar que robôs se autentiquem;

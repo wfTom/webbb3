@@ -1,0 +1,14 @@
+se tiver algum problema verificar o nome do projeto, contrato
+que está com letra minuscula e na aula está com a primeira letra maiscula
+
+para gerar moedas de teste
+acesse https://testnet.bscscan.com/
+para trocar de rede
+aí acesse https://www.bnbchain.org/en/testnet-faucet
+para gerar as criptomoedas dessa rede
+
+site para consultar um endereco
+https://testnet.bscscan.com
+
+site para fazer o contrato
+https://remix.ethereum.org/
